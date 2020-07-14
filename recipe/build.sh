@@ -2,10 +2,10 @@
 
 declare -a CONFIGURE_ARGS
 if [[ ${target_platform} == "osx-64" ]]; then
-  # CONFIGURE_ARGS+=("--disable-dependency-tracking")
-  # CONFIGURE_ARGS+=("--disable-silent-rules")
-  # CONFIGURE_ARGS+=("--enable-nls")
-  # CONFIGURE_ARGS+=("--disable-plugins")
+  CONFIGURE_ARGS+=("--disable-dependency-tracking")
+  CONFIGURE_ARGS+=("--disable-silent-rules")
+  CONFIGURE_ARGS+=("--enable-nls")
+  CONFIGURE_ARGS+=("--disable-plugins")
   :
 else
   CONFIGURE_ARGS+=("--with-cap")
