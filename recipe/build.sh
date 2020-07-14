@@ -6,12 +6,13 @@ if "${PYTHON}" --version | grep -i pypy; then
     CONFIGURE_ARGS+=("PYTHON_LIBS=-L$PREFIX/lib -lpypy3-c")
 fi
 
+# --with-cap \
+
 ./configure \
     --prefix="${PREFIX}"  \
     --enable-python \
     --with-external-db \
     --with-lua \
-    --with-cap \
     PYTHON="${PYTHON}" \
     "${CONFIGURE_ARGS[@]}"
 

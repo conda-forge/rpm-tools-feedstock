@@ -21,14 +21,15 @@ requirements:
     - make
     - cmake
     - pkg-config
+    - llvm-openmp  # [osx]
     - libgomp      # [linux]
   host:
     - python
     - pip
-    - elfutils
+    - elfutils     # [linux]
     - file
     - libarchive
-    - libcap
+    - libcap       # [linux]
     - lmdb
     - lua
     - nss
