@@ -12,8 +12,8 @@ source:
   sha256: ddef45f9601cd12042edfc9b6e37efcca32814e1e0f4bb8682d08144a3e2d230
 
 build:
-  number: 1
-  skip: true  # [win or osx]
+  number: 2
+  skip: true  # [win]
 
 requirements:
   build:
@@ -21,14 +21,14 @@ requirements:
     - make
     - cmake
     - pkg-config
+    - llvm-openmp  # [osx]
     - libgomp      # [linux]
   host:
-    - python
-    - pip
-    - elfutils
-    - file
+    - python       # [linux]
+    - pip          # [linux]
+    - elfutils     # [linux]
     - libarchive
-    - libcap
+    - libcap       # [linux]
     - lmdb
     - lua
     - nss
@@ -41,14 +41,14 @@ requirements:
     - file
     - zlib
   run:
-    - python
-    - {{ pin_compatible('elfutils') }}
+    - python                            # [linux]
+    - {{ pin_compatible('elfutils') }}  # [linux]
     - {{ pin_compatible('nss') }}
     - {{ pin_compatible('file') }}
 
 test:
-  imports:
-    - rpm
+  imports:   # [linux]
+    - rpm    # [linux]
   commands:
     - rpm --help
 
