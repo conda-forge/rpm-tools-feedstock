@@ -43,7 +43,7 @@ requirements:
     - zlib
   run:
     - python
-    - {{ pin_compatible('elfutils') }}
+    - {{ pin_compatible('elfutils') }}  # [linux]
     - {{ pin_compatible('nss') }}
     - {{ pin_compatible('file') }}
 
