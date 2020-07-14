@@ -24,10 +24,9 @@ requirements:
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
   host:
-    - python
-    - pip
+    - python       # [linux]
+    - pip          # [linux]
     - elfutils     # [linux]
-    - file
     - libarchive
     - libcap       # [linux]
     - lmdb
@@ -42,14 +41,14 @@ requirements:
     - file
     - zlib
   run:
-    - python
-    - {{ pin_compatible('elfutils') }}
+    - python                            # [linux]
+    - {{ pin_compatible('elfutils') }}  # [linux]
     - {{ pin_compatible('nss') }}
     - {{ pin_compatible('file') }}
 
 test:
-  imports:
-    - rpm
+  imports:  # [linux]
+   - rpm    # [linux]
   commands:
     - rpm --help
 
