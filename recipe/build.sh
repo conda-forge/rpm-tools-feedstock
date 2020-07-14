@@ -21,7 +21,7 @@ fi
     --prefix="${PREFIX}"  \
     --with-external-db \
     --with-lua \
-    --without-apidocs
+    --without-apidocs \
     "${CONFIGURE_ARGS[@]}"
 
 make "-j${CPU_COUNT}" install
