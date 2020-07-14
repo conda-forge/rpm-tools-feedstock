@@ -47,8 +47,8 @@ requirements:
     - {{ pin_compatible('file') }}
 
 test:
-  imports:  # [linux]
-   - rpm    # [linux]
+  imports:   # [linux]
+    - rpm    # [linux]
   commands:
     - rpm --help
 
