@@ -21,7 +21,6 @@ fi
     --prefix="${PREFIX}"  \
     --with-external-db \
     --with-lua \
-    --with-external-db \
     --without-apidocs
     "${CONFIGURE_ARGS[@]}"
 
