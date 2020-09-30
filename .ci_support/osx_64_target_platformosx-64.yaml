@@ -13,15 +13,13 @@ channel_targets:
 libarchive:
 - '3.3'
 libiconv:
-- '1.15'
+- '1.16'
 lua:
 - '5'
 macos_machine:
 - x86_64-apple-darwin13.4.0
-macos_min_version:
-- '10.9'
 nss:
-- '3.39'
+- '3'
 pin_run_as_build:
   bzip2:
     max_pin: x
@@ -33,8 +31,6 @@ pin_run_as_build:
     max_pin: x.x
   zlib:
     max_pin: x.x
-  zstd:
-    max_pin: x.x.x
 target_platform:
 - osx-64
 xz:
@@ -42,4 +38,4 @@ xz:
 zlib:
 - '1.2'
 zstd:
-- 1.4.4
+- '1.4'
