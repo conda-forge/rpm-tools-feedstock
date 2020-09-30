@@ -29,6 +29,7 @@ requirements:
     - elfutils     # [linux]
     - libarchive
     - libcap       # [linux]
+    - libgcrypt
     - lmdb
     - lua
     - nss
