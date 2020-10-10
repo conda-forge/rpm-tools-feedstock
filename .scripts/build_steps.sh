@@ -29,13 +29,6 @@ source run_conda_forge_build_setup
 # make the build number clobber
 make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
-<<<<<<< HEAD
-=======
-conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
-    --suppress-variables ${EXTRA_CB_OPTIONS:-} \
-    --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
-validate_recipe_outputs "${FEEDSTOCK_NAME}"
->>>>>>> regro-cf-autotick-bot/4.16.0_he91793
 
 if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     if [[ "x${BUILD_OUTPUT_ID:-}" != "x" ]]; then

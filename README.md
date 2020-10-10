@@ -40,7 +40,6 @@ Current build status
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
               <td>linux_64_python3.6.____73_pypytarget_platformlinux-64</td>
-<<<<<<< HEAD
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10141&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rpm-tools-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.6.____73_pypytarget_platformlinux-64" alt="variant">
@@ -72,32 +71,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10141&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rpm-tools-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.9.____cpythontarget_platformlinux-64" alt="variant">
-=======
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10141&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rpm-tools-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.6.____73_pypytarget_platformlinux-64" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.6.____cpythontarget_platformlinux-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10141&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rpm-tools-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.6.____cpythontarget_platformlinux-64" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpythontarget_platformlinux-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10141&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rpm-tools-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.7.____cpythontarget_platformlinux-64" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____cpythontarget_platformlinux-64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10141&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rpm-tools-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.8.____cpythontarget_platformlinux-64" alt="variant">
->>>>>>> regro-cf-autotick-bot/4.16.0_he91793
                 </a>
               </td>
             </tr><tr>
