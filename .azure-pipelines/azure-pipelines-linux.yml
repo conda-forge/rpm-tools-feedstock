@@ -22,10 +22,13 @@ jobs:
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
       linux_64_python3.8.____cpythontarget_platformlinux-64:
         CONFIG: linux_64_python3.8.____cpythontarget_platformlinux-64
+<<<<<<< HEAD
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
       linux_64_python3.9.____cpythontarget_platformlinux-64:
         CONFIG: linux_64_python3.9.____cpythontarget_platformlinux-64
+=======
+>>>>>>> regro-cf-autotick-bot/4.16.0_he91793
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
     maxParallel: 8
