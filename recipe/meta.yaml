@@ -1,5 +1,5 @@
 {% set name = "rpm-tools" %}
-{% set version = "4.15.1" %}
+{% set version = "4.16.1" %}
 {% set major_minor = ".".join(version.split(".")[:-1]) %}
 
 package:
@@ -9,10 +9,10 @@ package:
 
 source:
   url: http://ftp.rpm.org/releases/rpm-{{ major_minor }}.x/rpm-{{ version }}.tar.bz2
-  sha256: ddef45f9601cd12042edfc9b6e37efcca32814e1e0f4bb8682d08144a3e2d230
+  sha256: 4650cb9d414704059a6e0bee73a68a13bb367dfce188bd35f56b19e13a775cbf
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -29,6 +29,7 @@ requirements:
     - elfutils     # [linux]
     - libarchive
     - libcap       # [linux]
+    - libgcrypt
     - lmdb
     - lua
     - nss
@@ -56,7 +57,7 @@ about:
   home: https://rpm.org/index.html
   license: GPL-2.0-or-later OR LGPL-2.0-or-later
   license_file: COPYING
-  summary: 'The RPM Package Manager'
+  summary: The RPM Package Manager
   description: |
     The RPM Package Manager (RPM) is a powerful package management system capable of:
 
