@@ -5,7 +5,7 @@ bzip2:
 c_compiler:
 - clang
 c_compiler_version:
-- '13'
+- '14'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -13,9 +13,9 @@ channel_targets:
 libarchive:
 - '3.5'
 libiconv:
-- '1.16'
+- '1'
 llvm_openmp:
-- '13'
+- '14'
 lua:
 - '5'
 macos_machine:
@@ -25,8 +25,6 @@ nss:
 pin_run_as_build:
   bzip2:
     max_pin: x
-  libiconv:
-    max_pin: x.x
   nss:
     max_pin: x
   xz:

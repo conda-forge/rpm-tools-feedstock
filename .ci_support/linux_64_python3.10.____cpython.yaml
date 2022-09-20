@@ -15,7 +15,7 @@ docker_image:
 libarchive:
 - '3.5'
 libiconv:
-- '1.16'
+- '1'
 lua:
 - '5'
 nss:
@@ -23,8 +23,6 @@ nss:
 pin_run_as_build:
   bzip2:
     max_pin: x
-  libiconv:
-    max_pin: x.x
   nss:
     max_pin: x
   python:
