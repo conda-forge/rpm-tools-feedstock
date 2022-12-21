@@ -11,7 +11,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libarchive:
-- '3.5'
+- '3.6'
 libiconv:
 - '1'
 llvm_openmp:
