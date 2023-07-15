@@ -5,7 +5,7 @@ bzip2:
 c_compiler:
 - clang
 c_compiler_version:
-- '14'
+- '15'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -15,7 +15,9 @@ libarchive:
 libiconv:
 - '1'
 llvm_openmp:
-- '14'
+- '15'
+lmdb:
+- 0.9.29
 lua:
 - '5'
 macos_machine:

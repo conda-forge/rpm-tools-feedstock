@@ -1,11 +1,11 @@
-About rpm-tools
-===============
+About rpm-tools-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rpm-tools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://rpm.org/index.html
 
 Package license: GPL-2.0-or-later OR LGPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rpm-tools-feedstock/blob/main/LICENSE.txt)
 
 Summary: The RPM Package Manager
 
