@@ -15,11 +15,9 @@ docker_image:
 elfutils:
 - '0.189'
 libarchive:
-- '3.6'
+- '3.7'
 libiconv:
 - '1'
-lmdb:
-- 0.9.29
 lua:
 - '5'
 nss:
