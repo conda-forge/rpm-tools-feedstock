@@ -12,13 +12,11 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libarchive:
-- '3.6'
+- '3.7'
 libiconv:
 - '1'
 llvm_openmp:
 - '15'
-lmdb:
-- 0.9.29
 lua:
 - '5'
 macos_machine:
