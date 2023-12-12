@@ -1,5 +1,5 @@
 {% set name = "rpm-tools" %}
-{% set version = "4.17.1" %}
+{% set version = "4.19.1" %}
 {% set major_minor = ".".join(version.split(".")[:-1]) %}
 
 package:
@@ -9,10 +9,10 @@ package:
 
 source:
   url: http://ftp.rpm.org/releases/rpm-{{ major_minor }}.x/rpm-{{ version }}.tar.bz2
-  sha256: 0c11b793466e7258851ff82bd65c8ffd8c2dbbc70acc869a5d34150549926e5d
+  sha256: 4de4dcd82f2a46cf48a83810fe94ebda3d4719b45d547ed908b43752a7581df1
 
 build:
-  number: 4
+  number: 0
   skip: true  # [win]
 
 requirements:
