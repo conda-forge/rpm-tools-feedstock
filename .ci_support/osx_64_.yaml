@@ -1,14 +1,19 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.9'
+- '10.13'
+MACOSX_SDK_VERSION:
+- '10.13'
 bzip2:
 - '1'
 c_compiler:
 - clang
 c_compiler_version:
-- '15'
+- '17'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '10.13'
 channel_sources:
 - conda-forge
-- conda-forge/label/python_rc,conda-forge
 channel_targets:
 - conda-forge main
 libarchive:
@@ -16,7 +21,9 @@ libarchive:
 libiconv:
 - '1'
 llvm_openmp:
-- '15'
+- '17'
+lmdb:
+- 0.9.29
 lua:
 - '5'
 macos_machine:
@@ -28,6 +35,6 @@ target_platform:
 xz:
 - '5'
 zlib:
-- '1.2'
+- '1'
 zstd:
 - '1.5'
