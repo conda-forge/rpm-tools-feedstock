@@ -37,7 +37,7 @@ requirements:
     - popt
     - libdb
     - zstd
-    - xz
+    - liblzma-devel
     - bzip2
     - libiconv
     - file
