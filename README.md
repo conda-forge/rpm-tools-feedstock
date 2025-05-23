@@ -20,7 +20,6 @@ The RPM Package Manager (RPM) is a powerful package management system capable of
 * querying detailed information about the packaged software, whether installed or not
 * verifying integrity of packaged software and resulting software installation
 
-
 Current build status
 ====================
 
