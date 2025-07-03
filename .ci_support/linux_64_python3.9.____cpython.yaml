@@ -19,7 +19,7 @@ docker_image:
 elfutils:
 - '0.192'
 libarchive:
-- '3.7'
+- '3.8'
 libcap:
 - '2.76'
 libiconv:
