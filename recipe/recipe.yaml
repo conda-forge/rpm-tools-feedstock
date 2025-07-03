@@ -16,7 +16,7 @@ source:
     - 0001-Remove-fhardened-from-compiler-flags.patch
 
 build:
-  number: 0
+  number: 1
   skip: win or osx
   script:
     - mkdir build-dir
@@ -38,11 +38,10 @@ requirements:
       then: libgomp
   host:
     - if: linux
-      then: python
-    - if: linux
-      then: pip
-    - if: linux
-      then: elfutils
+      then:
+        - python
+        - pip
+        - elfutils
     - libarchive
     - if: linux
       then: libcap
@@ -62,9 +61,9 @@ requirements:
     - libacl
   run:
     - if: linux
-      then: python
-    - if: linux
-      then: ${{ pin_compatible('elfutils') }}
+      then:
+        - python
+        - ${{ pin_compatible('elfutils') }}
     - ${{ pin_compatible('nss') }}
     - ${{ pin_compatible('file') }}
 
