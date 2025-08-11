@@ -6,10 +6,10 @@
 "$schema" = "https://pixi.sh/v0.36.0/schema/manifest/schema.json"
 
 [project]
-name = "rpm-tools-feedstock"
-version = "3.50.1"  # conda-smithy version used to generate this file
-description = "Pixi configuration for conda-forge/rpm-tools-feedstock"
-authors = ["@conda-forge/rpm-tools"]
+name = "44"
+version = "3.51.1"  # conda-smithy version used to generate this file
+description = "Pixi configuration for conda-forge/44"
+authors = ["@conda-forge/"]
 channels = ["conda-forge"]
 platforms = ["linux-64", "osx-64", "win-64"]
 
@@ -24,37 +24,37 @@ cmd = "inspect_artifacts --all-packages"
 description = "List contents of all packages found in rattler-build build directory."
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
-description = "Build rpm-tools-feedstock directly (without setup scripts), no particular variant specified"
+description = "Build 44 directly (without setup scripts), no particular variant specified"
 [tasks."build-linux_64_python3.10.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python3.10.____cpython.yaml"
-description = "Build rpm-tools-feedstock with variant linux_64_python3.10.____cpython directly (without setup scripts)"
+description = "Build 44 with variant linux_64_python3.10.____cpython directly (without setup scripts)"
 [tasks."inspect-linux_64_python3.10.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_python3.10.____cpython.yaml"
-description = "List contents of rpm-tools-feedstock packages built for variant linux_64_python3.10.____cpython"
+description = "List contents of 44 packages built for variant linux_64_python3.10.____cpython"
 [tasks."build-linux_64_python3.11.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python3.11.____cpython.yaml"
-description = "Build rpm-tools-feedstock with variant linux_64_python3.11.____cpython directly (without setup scripts)"
+description = "Build 44 with variant linux_64_python3.11.____cpython directly (without setup scripts)"
 [tasks."inspect-linux_64_python3.11.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_python3.11.____cpython.yaml"
-description = "List contents of rpm-tools-feedstock packages built for variant linux_64_python3.11.____cpython"
+description = "List contents of 44 packages built for variant linux_64_python3.11.____cpython"
 [tasks."build-linux_64_python3.12.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python3.12.____cpython.yaml"
-description = "Build rpm-tools-feedstock with variant linux_64_python3.12.____cpython directly (without setup scripts)"
+description = "Build 44 with variant linux_64_python3.12.____cpython directly (without setup scripts)"
 [tasks."inspect-linux_64_python3.12.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_python3.12.____cpython.yaml"
-description = "List contents of rpm-tools-feedstock packages built for variant linux_64_python3.12.____cpython"
+description = "List contents of 44 packages built for variant linux_64_python3.12.____cpython"
 [tasks."build-linux_64_python3.13.____cp313"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python3.13.____cp313.yaml"
-description = "Build rpm-tools-feedstock with variant linux_64_python3.13.____cp313 directly (without setup scripts)"
+description = "Build 44 with variant linux_64_python3.13.____cp313 directly (without setup scripts)"
 [tasks."inspect-linux_64_python3.13.____cp313"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_python3.13.____cp313.yaml"
-description = "List contents of rpm-tools-feedstock packages built for variant linux_64_python3.13.____cp313"
+description = "List contents of 44 packages built for variant linux_64_python3.13.____cp313"
 [tasks."build-linux_64_python3.9.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_python3.9.____cpython.yaml"
-description = "Build rpm-tools-feedstock with variant linux_64_python3.9.____cpython directly (without setup scripts)"
+description = "Build 44 with variant linux_64_python3.9.____cpython directly (without setup scripts)"
 [tasks."inspect-linux_64_python3.9.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_python3.9.____cpython.yaml"
-description = "List contents of rpm-tools-feedstock packages built for variant linux_64_python3.9.____cpython"
+description = "List contents of 44 packages built for variant linux_64_python3.9.____cpython"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
