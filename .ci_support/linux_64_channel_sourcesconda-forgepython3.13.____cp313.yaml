@@ -21,7 +21,7 @@ elfutils:
 libarchive:
 - '3.8'
 libcap:
-- '2.76'
+- '2.78'
 libiconv:
 - '1'
 liblzma_devel:
