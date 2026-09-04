@@ -16,7 +16,7 @@ source:
     - 0001-Remove-fhardened-from-compiler-flags.patch
 
 build:
-  number: 0
+  number: 1
   skip: win or osx
   script:
     - mkdir build-dir
