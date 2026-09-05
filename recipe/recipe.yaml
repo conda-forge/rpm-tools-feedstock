@@ -23,7 +23,14 @@ source:
 
 build:
   number: 0
-  skip: win or osx
+  skip:
+    - win or osx
+    # The Python bindings are a stable-ABI extension module (rpm compiles _rpm
+    # with Py_LIMITED_API), so one build against the oldest supported Python
+    # serves every later version and the per-Python matrix is unnecessary.
+    - is_abi3 and not is_python_min
+  python:
+    version_independent: ${{ is_abi3 }}
   script:
     - mkdir build-dir
     - cd build-dir
@@ -48,6 +55,8 @@ requirements:
     - if: linux
       then:
         - python
+        - if: is_abi3
+          then: python-abi3
         - elfutils
     - libarchive
     - if: linux
@@ -75,6 +84,17 @@ tests:
   - python:
       imports:
         - rpm
+      python_version:
+        - if: is_abi3
+          then: ${{ python_min }}.*
+        - "*"
+  - if: is_abi3
+    then:
+      script:
+        - abi3audit $SP_DIR/rpm/_rpm.so -s -v --assume-minimum-abi3 ${{ python_min }}
+      requirements:
+        run:
+          - abi3audit
   - script:
       - rpm --help
 
