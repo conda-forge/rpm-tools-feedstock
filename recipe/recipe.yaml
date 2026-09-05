@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: rpm-tools
-  version: "6.0.2"
+  version: "6.1.0"
   major_minor: ${{ (version | split('.'))[:2] | join('.') }}
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: http://ftp.rpm.org/releases/rpm-${{ major_minor }}.x/rpm-${{ version }}.tar.bz2
-  sha256: 66a4998e020d7354a804fde83801a9d7157b20f5e08198f7fde69d3a0ab683fe
+  sha256: f520810d27c74bf1c5d8b8885845c61e0c845f62d33e68b02e020633a8b62fe3
   patches:
     - 0001-Remove-fhardened-from-compiler-flags.patch
     # rpm only builds a stable-ABI extension module, so it needs the Python
@@ -22,8 +22,15 @@ source:
     - 0002-Only-require-the-Python-Development.Module-component.patch
 
 build:
-  number: 1
-  skip: win or osx
+  number: 0
+  skip:
+    - win or osx
+    # The Python bindings are a stable-ABI extension module (rpm compiles _rpm
+    # with Py_LIMITED_API), so one build against the oldest supported Python
+    # serves every later version and the per-Python matrix is unnecessary.
+    - is_abi3 and not is_python_min
+  python:
+    version_independent: ${{ is_abi3 }}
   script:
     - mkdir build-dir
     - cd build-dir
@@ -48,6 +55,8 @@ requirements:
     - if: linux
       then:
         - python
+        - if: is_abi3
+          then: python-abi3
         - elfutils
     - libarchive
     - if: linux
@@ -75,6 +84,17 @@ tests:
   - python:
       imports:
         - rpm
+      python_version:
+        - if: is_abi3
+          then: ${{ python_min }}.*
+        - "*"
+  - if: is_abi3
+    then:
+      script:
+        - abi3audit $SP_DIR/rpm/_rpm.so -s -v --assume-minimum-abi3 ${{ python_min }}
+      requirements:
+        run:
+          - abi3audit
   - script:
       - rpm --help
 
