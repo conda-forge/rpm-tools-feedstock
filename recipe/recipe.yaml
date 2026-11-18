@@ -22,7 +22,7 @@ source:
     - 0002-Only-require-the-Python-Development.Module-component.patch
 
 build:
-  number: 0
+  number: 1
   skip:
     - win or osx
     # The Python bindings are a stable-ABI extension module (rpm compiles _rpm
